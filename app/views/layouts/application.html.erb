@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Walker Trent</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,800" rel="stylesheet">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <title>Walker Trent</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,800" rel="stylesheet">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <div class="container">
-      <%= yield %>
+<body>
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class='container'>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <%= link_to root_path, class: "navbar-brand" do %>
+          <i class ="fa fa-group"></i>
+          Walker Trent
+        <% end %>
+      </div>
+      <div class="collapse navbar-collapse" id="main-nav-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "Bio", bio_path %></li>
+          <li><%= link_to "Projects", projects_path %></li>
+          <li><%= link_to "Academic", academic_path %></li>
+          <li><%= link_to "Contact Me", contact_me_path %></li>
+        </ul>
+      </div>
     </div>
-  </body>
+  </nav>
+    
+  <%= yield %>
+</body>
+<foot>
+  <div class="footer">
+    <p>© 2018 Walker D. Trent, all rights reserved.</p>
+    <!--<br>-->
+    <h2><a href="www.linkedin.com/in/walker-trent-615vol/" title="LinkedIN"><i class="fab fa-linkedin"></i></a>
+    <a href="github.com/wtrent1" title="Github"><i class="fab fa-github"></i></a></h2>
+  </div>
+</foot>
 </html>
