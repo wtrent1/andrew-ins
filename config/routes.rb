@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   get 'projects', to: 'pages#projects'
   get 'academic', to: 'pages#academic'
   resources :contacts, only: :create
-  get 'contact_me', to: 'contacts#new', as: 'contact_me'
+  get 'contact-me', to: 'contacts#new', as: 'contact_me'
 end
