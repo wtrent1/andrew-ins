@@ -3,4 +3,8 @@ class PagesController < ApplicationController
   end
   def bio
   end
+  def projects
+  end
+  def academic
+  end
 end
