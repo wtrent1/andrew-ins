@@ -44,9 +44,16 @@
 <foot>
   <div class="footer">
     <p>© 2018 Walker D. Trent, all rights reserved.</p>
-    <!--<br>-->
-    <h2><a href="www.linkedin.com/in/walker-trent-615vol/" title="LinkedIN"><i class="fab fa-linkedin"></i></a>
-    <a href="github.com/wtrent1" title="Github"><i class="fab fa-github"></i></a></h2>
+    <div class="col-md-6 footer-icon-aright"><h2>
+      <%= link_to 'https://github.com/wtrent1' do %>
+        <i class="fab fa-github"> </i>
+      <% end %><h2>
+    </div>
+    <div class="col-md-6 footer-icon-aleft"><h2>
+      <%= link_to 'https://www.linkedin.com' do %>
+        <i class="fab fa-linkedin"> </i>
+      <% end %></h2>
+    </div>
   </div>
 </foot>
 </html>
