@@ -69,12 +69,9 @@ group :test do
   gem 'chromedriver-helper'
 end
 
-# # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
 group :production do
   # Use the PostgreSQL gem for Heroku production servers
-  gem 'pg', '1.1.3'
+  gem 'pg', '~> 0.18'
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
