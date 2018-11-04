@@ -24,4 +24,4 @@ production:
     <<: *default
     adapter: postgresql
     database: db/production.pg
-    host: https://safe-springs-86065.herokuapp.com/
+    host: localhost
