@@ -26,4 +26,4 @@ production:
   <<: *default
   adapter: postgresql
   database: db_prod
-  # url: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV['DATABASE_URL'] %>
