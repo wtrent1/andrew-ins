@@ -42,9 +42,6 @@ gem 'font-awesome-sass', '5.3.1'
 #Use hirb for better db display in console
 gem 'hirb', '0.7.3'
 
-#Use devise for user authentication
-gem 'devise', '4.5.0'
-
 #Use Figaro to track env variables
 gem 'figaro'
 

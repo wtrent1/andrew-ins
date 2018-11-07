@@ -1,12 +1,12 @@
 class ContactsController < ApplicationController
 
-  # GET request to /contact-us
+  # GET request to /contact-me
   # Show new contact form
   def new
     @contact = Contact.new
   end
   
-  # OST request to /contacts
+  # POST request to /contacts
   def create
     # Mass assignment of form fields into contact object
     @contact = Contact.new(contact_params)
