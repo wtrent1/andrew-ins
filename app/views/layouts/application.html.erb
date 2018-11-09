@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Walker Trent</title>
+  <title>Andrew Pike</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,800" rel="stylesheet">
@@ -21,15 +21,13 @@
         </button>
         <%= link_to root_path, class: "navbar-brand" do %>
           <i class ="fa fa-group"></i>
-          Walker Trent
+          Andrew Pike
         <% end %>
       </div>
       <div class="collapse navbar-collapse" id="main-nav-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "Bio", bio_path %></li>
-          <li><%= link_to "Projects", projects_path %></li>
-          <li><%= link_to "Academic", academic_path %></li>
-          <li><%= link_to "Contact Me", contact_me_path %></li>
+          <li><%= link_to "About Me", about_path %></li>
+          <li><%= link_to "Get a Quote", quotes_path %></li>
         </ul>
       </div>
     </div>
@@ -43,16 +41,11 @@
 </body>
 <foot>
   <div class="footer">
-    <p>© 2018 Walker D. Trent, all rights reserved.</p>
-    <div class="col-md-6 footer-icon-aright"><h2>
-      <%= link_to 'https://github.com/wtrent1' do %>
-        <i class="fab fa-github"> </i>
-      <% end %></h2>
-    </div>
-    <div class="col-md-6 footer-icon-aleft"><h2>
-      <%= link_to 'https://www.linkedin.com/in/walker-trent-615vol/' do %>
-        <i class="fab fa-linkedin"> </i>
-      <% end %></h2>
+    <p>© 2018 Andrew Pike, all rights reserved.</p>
+    <div class="col-md-6 footer-icon-aright">
+    <h2>
+      <%= link_to 'Terry Johnson Insurance', 'http://tjohnsonins.com/' %>
+    </h2>
     </div>
   </div>
 </foot>

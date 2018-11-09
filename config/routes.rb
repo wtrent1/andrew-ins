@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
-  get 'bio', to: 'pages#bio'
-  get 'projects', to: 'pages#projects'
-  get 'academic', to: 'pages#academic'
+  get 'about', to: 'pages#about'
   resources :contacts, only: :create
-  get 'contact-me', to: 'contacts#new', as: 'contact_me'
+  get 'get-a-quote', to: 'contacts#new', as: 'quotes'
 end
