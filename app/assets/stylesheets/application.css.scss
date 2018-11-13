@@ -20,7 +20,7 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 
 // Colors in navbar
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
-  color: #B1B5C4;
+  color:#B1B5C4;;
   &:hover {
     color: #B1B5C4;
     opacity: 0.75;
@@ -49,20 +49,8 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
   font-size: 11pt;
 }
 
-.footer-icon-aright {
-  text-align: right;
-}
-
-.footer-icon-aleft {
-  text-align: left;
-}
-
-.fa-linkedin {
-  color: #4875B4;
-}
-
-.fa-github {
-  color: black;
+.footer-icon {
+  text-align: center;
 }
 
 .contact-form {
