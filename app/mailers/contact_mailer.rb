@@ -1,10 +1,10 @@
 class ContactMailer < ActionMailer::Base
   default to: 'walktrent@gmail.com'
  
-  def contact_email(name, email, quote, body)
+  def contact_email(name, email, coverage, body)
     @name = name
     @email = email
-    @quote = quote
+    @coverage = coverage
     @body = body
     
     mail(from: email, subject: 'Contact Form Message')
