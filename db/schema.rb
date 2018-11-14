@@ -10,15 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_13_021308) do
+ActiveRecord::Schema.define(version: 2018_10_19_012503) do
 
   create_table "contacts", force: :cascade do |t|
     t.string "name"
     t.string "email"
+    t.string "coverage"
     t.text "comments"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "coverage"
   end
 
 end
